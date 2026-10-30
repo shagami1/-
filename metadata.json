@@ -1,0 +1,6 @@
+{
+  "name": "احترف ببساطة مع دكتورة شيماء - SmartTech Learning Platform",
+  "description": "منصة تعليمية عربية متكاملة لتعلم مهارات الحاسوب، إكسل المتقدم، وتحليل البيانات مع دكتورة شيماء العجمي ومركز سمارتك للتدريب المتطور.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

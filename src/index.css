@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'IBM Plex Sans Arabic', 'Cairo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --color-brand-red: #C62828;
+  --color-brand-red-dark: #991B1B;
+  --color-brand-red-light: #EF4444;
+  --color-brand-dark: #171717;
+}
+
+body {
+  font-family: var(--font-sans);
+  direction: rtl;
+  text-align: right;
+}
+
+/* LTR forced blocks for code, spreadsheet coordinates, formulas, and numeric displays */
+.ltr-text {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Custom compact scrollbar for tables, sidebars, and spreadsheet grid */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print layout for certificates */
+@media print {
+  body {
+    direction: rtl;
+    background: white;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
